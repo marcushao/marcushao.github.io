@@ -7,14 +7,23 @@
 
 .serif {
   font-family: 'Noto Sans TC', sans-serif;
+  font-weight: bold;
 }
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #C9DAE2;
+  background-color: #eddfd3;
+  
+}
+
+h1{
+  font-weight: bold;
+  margin-left: 500px;
+  font-size: 25px;
 }
 
 .header {
-  background-color: #C9DAE2;
+  background-color:#eddfd3;
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -56,6 +65,19 @@ body {
    
 }
 
+.photocard{
+   background-color: rgba(255, 255, 255, 0.247);
+   height: 180px;
+   width: 500px;
+   margin-left: 350px;
+   position: relative;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.photocard .img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -64,24 +86,25 @@ body {
 }
 .navbar {
   overflow: hidden;
-  background-color:#BDDCDE;
+  background-color:#0c1e2d;
   top:0;
   position: fixed;  
   height: 50px;
   width: 100%;
   padding-left: 50px;
-  
+  font-weight: bold;
+  z-index: 100;
 }
 
 .navbar a {
   float: left;
   font-size: 15px;
-  color: #6d6d6d;
+  color: #eddfd3;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   position: relative;
- 
+  font-weight: bold;
 }
 
 .dropdown {
@@ -94,7 +117,7 @@ body {
   font-size: 15px;  
   border: none;
   outline: none;
-  color: #6d6d6d;
+  color:#eddfd3;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -109,7 +132,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #BDDCDE;
+  background-color: #0c1e2d;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -118,7 +141,7 @@ body {
 }
 .dropdown-content a {
   float: none;
-  color:#6d6d6d;
+  color:#eddfd3;
   padding: 5px 10px;
   text-decoration: none;
   display: block;
@@ -159,7 +182,85 @@ body {
     float: none;
     width: 100%;
   }
-  .leftcolumn .rightcolumn .columnforfood{
+  .leftcolumn .rightcolumn .columnforfood .tab .tabcontent{
+    float: none;
     width: 100%;
   } 
+}
+
+.tab {
+  overflow: hidden;
+  border: 2px solid #0c1e2d;
+  background-color: #eddfd3;
+  
+}
+
+
+
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 50px;
+  transition: 0.3s;
+  font-size: 17px;
+  color:black;
+  
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  color:white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color:  #0c1e2d;
+  color:white;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 1px 5px;
+  height: 500px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+   border: 2px solid #0c1e2d;
+   border-top: none;
+  
+}
+
+.tabcontent2 {
+  display: none;
+  padding: 1px 5px;
+  height: 500px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+   border: 2px solid #0c1e2d;
+   border-top: none;
+  
+}
+
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+img{
+ border: 2px solid white;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+ margin-left: 15px;
 }
