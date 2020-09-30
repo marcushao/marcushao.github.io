@@ -34,9 +34,13 @@ h1{
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 75%;
+  width: 50%;
 }
 
+.tinycolumn{
+  float: left;
+  width: 50%;
+}
 /* Right column */
 .rightcolumn {
   float: left;
@@ -62,16 +66,19 @@ h1{
    background-color: white;
    padding: 20px;
    margin-top: 20px;
-   
+}
+
+.card2{
+   border: 0px 
 }
 
 .photocard{
-   background-color: rgba(255, 255, 255, 0.247);
-   height: 180px;
-   width: 500px;
-   margin-left: 350px;
-   position: relative;
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.247);
+    height: 180px;
+    width: 500px;
+    margin-left: 250px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .photocard .img:hover {
@@ -91,7 +98,7 @@ h1{
   position: fixed;  
   height: 50px;
   width: 100%;
-  padding-left: 50px;
+  padding-left: 350px;
   font-weight: bold;
   z-index: 100;
 }
@@ -162,7 +169,8 @@ h1{
 
 
 .main {
-  padding: 16px;
+  padding-left: 350px;
+  padding-left: 350px;
   margin-top: 30px;
   height: 1500px; /* Used in this example to enable scrolling */
 }
@@ -182,6 +190,7 @@ h1{
     float: none;
     width: 100%;
   }
+
   .leftcolumn .rightcolumn .columnforfood .tab .tabcontent{
     float: none;
     width: 100%;
@@ -263,4 +272,9 @@ img{
  border: 2px solid white;
  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
  margin-left: 15px;
+}
+
+h2{
+    font-size: 50px;
+    text-align: center;
 }
