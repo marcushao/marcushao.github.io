@@ -78,15 +78,27 @@
       </div>
      </div> 
     </div>
-
-  </div>
+    <div class="mobile-container">
+      <!-- Top Navigation Menu -->
+      <div class="mobilenav">
+        <a href="#home" class="active">Logo</a>
+        <div id="myLinks">
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+          <a href="#about">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
   
   <div class="header">
     MAOMAO GOGO  
   </div>
 
   <div class="row main">
-    <div class="leftcolumn">
+    <div class="col-9 col-d-9 leftcolumn">
       <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'kitten')" id="defaultOpen">幼貓飼養</button>
         <button class="tablinks" onclick="openCity(event, 'cat')">成貓飼養</button>
@@ -179,7 +191,7 @@
     </div>
     
    
-    <div class="rightcolumn">
+    <div class="col-3 col-d-3 rightcolumn">
       <div class="card">
         <h2>About Me</h2>
         <div class="fakeimg" style="height:100px;">Image</div>
@@ -220,6 +232,14 @@
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
     
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
     </script>
  </body>
  </html>
