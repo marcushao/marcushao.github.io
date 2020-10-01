@@ -49,7 +49,7 @@
         <a href="#">飲食</a>
         <a href="#">居家防護</a>
         <a href="#">行為問題</a>
-        <a href="#">貓咪常見疾病</a>
+        <a href="#">狗狗常見疾病</a>
         <a href="#">領養資訊</a>
         <a href="#">動物醫院</a>
         <a href="#">走失協尋</a>
@@ -78,8 +78,73 @@
       </div>
      </div> 
     </div>
+       <!-- mobile Menu -->
+    <div class="mobile-container">
+      <div class="mobilenav">
+        <a href="#home" class="active">Logo</a>
+        <div id="myLinks">
+               <!-- mobile Menu -->
+                <a href="#news"><i class="fa fa-fw fa-home"></i>首頁</a>
+                <button class="mobiledropdown-btn">貓咪知識
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="mobiledropdown-container">
+                  <a href="catkonwledge_food.html">飲食</a>
+                  <a href="#">居家防護</a>
+                  <a href="#">行為問題</a>
+                  <a href="#">貓咪常見疾病</a>
+                  <a href="#">領養資訊</a>
+                  <a href="#">動物醫院</a>
+                  <a href="#">走失協尋</a>
+                </div>
+                <button class="mobiledropdown-btn">貓咪愛用
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="mobiledropdown-container">
+                  <a href="#">飲食器具</a>
+                  <a href="#">貓砂便盆</a>
+                  <a href="#">外出器具</a>
+                  <a href="#">清潔衛生</a>
+                  <a href="#">趣味玩具</a>
+                </div>
+                <button class="mobiledropdown-btn">狗狗知識
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="mobiledropdown-container">
+                  <a href="#">飲食</a>
+                  <a href="#">居家防護</a>
+                  <a href="#">行為問題</a>
+                  <a href="#">狗狗常見疾病</a>
+                  <a href="#">領養資訊</a>
+                  <a href="#">動物醫院</a>
+                  <a href="#">走失協尋</a>
+                </div>
+                <button class="mobiledropdown-btn">超讚狗物
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="mobiledropdown-container">
+                  <a href="#">飲食器具</a>
+                  <a href="#">便盆</a>
+                  <a href="#">外出器具</a>
+                  <a href="#">清潔衛生</a>
+                  <a href="#">趣味玩具</a>
+                </div>
+                <button class="mobiledropdown-btn">其他資訊
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="mobiledropdown-container">
+                  <a href="#">愛貓商城</a>
+                  <a href="#">補助資訊</a>
+                  <a href="#">文獻搜索</a>
+                </div>
+               <!-- mobile Menu -->
 
-  </div>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
   
   <div class="header">
     MAOMAO GOGO  
@@ -137,6 +202,38 @@
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
     
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+    /*mobile nav*/
+    function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+/*mobiledropdown navbar*/
+var dropdown = document.getElementsByClassName("mobiledropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
     </script>
  </body>
  </html>
