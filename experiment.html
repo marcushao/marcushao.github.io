@@ -11,14 +11,13 @@
      <link rel="stylesheet" href="main.css">
      <title>貓貓狗狗-貓咪狗狗養育與行為問題百科</title>
      <link rel="stylesheet" href="SimpleGraphics.CSS" />
-     <link type="text/css" rel="stylesheet" href="css/font-awesome.css">
  </head>
  <body>
   <div class="navbar">
     <a href="index.html"><i class="fa fa-fw fa-home"></i>首頁</a>
     <div class="dropdown">
-      <button class="dropbtn"><i class="fa fa-cat"></i>貓咪知識 
-        <i class="fa fa-caret-down "></i>
+      <button class="dropbtn">貓咪知識 
+        <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
         <a href="catkonwledge_food.html">飲食</a>
@@ -32,7 +31,7 @@
     </div> 
     <div class="dropdown">
       <button class="dropbtn">貓咪愛用
-        <i class="fa fa-caret-down "></i>
+        <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-content">
         <a href="#">飲食器具</a>
@@ -85,7 +84,7 @@
         <a href="#home" class="active">Logo</a>
         <div id="myLinks">
                <!-- mobile Menu -->
-                <a href="#news"><i class="fa fa-fw fa-home"></i>首頁</a>
+                <a href="#news">首頁</a>
                 <button class="mobiledropdown-btn">貓咪知識
                   <i class="fa fa-caret-down"></i>
                 </button>
@@ -282,19 +281,10 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
-    
+  
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
     
-    function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
     /*mobile nav*/
     function myFunction() {
   var x = document.getElementById("myLinks");
@@ -319,6 +309,7 @@ for (i = 0; i < dropdown.length; i++) {
   }
   });
 }
+
     </script>
  </body>
  </html>
