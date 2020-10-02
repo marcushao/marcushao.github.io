@@ -229,8 +229,8 @@ h1{
     width: 100%;
   }
 
-  .leftcolumn .rightcolumn .columnforfood .tab .tabcontent{
-    float: none;
+  .leftcolumn .rightcolumn .columnforfood .tab .tabcontent .tinycolumn{
+    float: left;
     width: 100%;
   } 
 }
@@ -412,4 +412,10 @@ h2{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
