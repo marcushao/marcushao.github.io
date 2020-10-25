@@ -13,6 +13,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #eddfd3;
+  margin:0
   
 }
 
@@ -56,34 +57,19 @@ h1{
 
 /* Fake image */
 .fakeimg {
-  background-color: black;
+  height: 50%;
   width: 100%;
   padding: 20px;
 }
 
 /* Add a card effect for articles */
 .card {
-   border: 2px solid black;
-   padding: 20px;
-   margin-top: 20px;
+  background-color:black;
+  widows: 5000px;
+  height:25%;
 }
 
-.card2{
-   border: 0px 
-}
 
-.photocard{
-    background-color: rgba(255, 255, 255, 0.247);
-    height: 180px;
-    width: 60%;
-    margin-left: 250px;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.photocard .img:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
 
 .mobilenav  {
   overflow: hidden;
@@ -217,7 +203,7 @@ h1{
 .footer {
   padding: 20px;
   text-align: center;
-  background: #282531;
+  background:#3C3C3B;
   margin-top: 20px;
 }
 
@@ -235,64 +221,11 @@ h1{
   } 
 }
 
-.tab {
-  overflow: hidden;
-  border: 2px solid #0c1e2d;
-  background-color: #eddfd3;
-  
-}
 
 
 
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px 50px;
-  transition: 0.3s;
-  font-size: 17px;
-  color:black;
-  
-}
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  color:white;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color:  #0c1e2d;
-  color:white;
-
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 1px 5px;
-  height: 30%;
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
-   border: 2px solid #0c1e2d;
-   border-top: none;
-  
-}
-
-.tabcontent2 {
-  display: none;
-  padding: 1px 5px;
-  height: 500px;
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
-   border: 2px solid #0c1e2d;
-   border-top: none;
-  
-}
 
 
 /* Fade in tabs */
@@ -306,12 +239,7 @@ h1{
   to {opacity: 1;}
 }
 
-img{
- border: 0px solid white;
- box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
- margin-left: 15px;
- height: auto;
-}
+
 
 /*文章的標題*/
 h2{
@@ -418,4 +346,95 @@ h2{
   width: 100%;
   height: auto;
 }
+
+/*首頁幻燈片*/
+* {box-sizing: border-box}
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
 
